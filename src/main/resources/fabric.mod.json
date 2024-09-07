@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rooot",
+	"version": "${version}",
+	"name": "Rooot",
+	"description": "Magic :]",
+	"authors": [
+		"Rhtox"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/rooot/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.rhtox.rooot.Rooot"
+		],
+		"fabric-datagen": [
+			"com.rhtox.rooot.RoootDataGenerator"
+		],
+		"client": [
+			"com.rhtox.rooot.RoootClient"
+		]
+	},
+	"mixins": [
+		"rooot.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.4",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
