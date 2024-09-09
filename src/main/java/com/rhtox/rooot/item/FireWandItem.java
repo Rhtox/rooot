@@ -7,18 +7,12 @@ import net.minecraft.item.BowItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
-import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
 import net.minecraft.util.math.Vec3d;
 
 public class FireWandItem extends BowItem {
     public FireWandItem(Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public UseAction getUseAction(ItemStack stack) {
-        return UseAction.BOW;
     }
 
     public int getMaxUseTime(ItemStack stack) {
